@@ -1,0 +1,143 @@
+/* 全体のフォント設定 */
+body {
+    font-family: 'Noto Sans JP', 'Arial', sans-serif;
+    font-size: 1.1rem; /* 基本フォントサイズ */
+    line-height: 2.2;
+    color: #4d4d4d;
+    /* margin: 0; */
+    padding: 20px;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+/* スマホ対応（600px以下） */
+@media (max-width: 600px) {
+    table {
+        font-size: 1rem; 
+		width: 100%;
+    }
+    input, button {
+        font-size: 1rem; 
+    }
+}
+
+
+/* 見出しスタイル */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Noto Sans JP', sans-serif; /* ゴシック体 */
+    font-weight: 400; /* 細めのスタイル */
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+/* 数字のフォント */
+body, input, button, table, #result {
+    font-feature-settings: "tnum"; /* 固定幅数字（タブラー数字）を有効化 */
+    font-family: 'Roboto', 'Arial', sans-serif; /* 数字には見やすいフォント */
+}
+
+/* 入力フィールド */
+input, button {
+    font-size: 1rem;
+    padding: 10px;
+    margin: 5px 0;
+    border: 2px solid #ffdab9; /* 柔らかいピーチ系カラー */
+    border-radius: 10px; /* 丸みをつける */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 軽い影をつける */
+}
+
+input:focus, button:focus {
+    outline: none; /* フォーカス時の青枠を消す */
+    border-color: #ffb6c1; /* フォーカス時にピンク色 */
+}
+
+/* ボタン */
+button {
+    background-color: #ffb6c1; /* 優しいピンク */
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff69b4; /* 濃いピンク */
+}
+
+/* テーブル */
+table {
+    font-size: 1rem; /* 通常時のフォントサイズ */
+    width: 600px;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fffaf0;
+    border-radius: 10px;
+}
+/* テーブルのセルで折り返さない設定 */
+th, td {
+    white-space: nowrap; /* テキストを折り返さない */
+    padding: 10px;
+    border: 1px solid #ffdab9; /* ピーチカラーの枠線 */
+}
+
+th {
+    background-color: #ffdab9; /* テーブルヘッダーの背景色 */
+    color: #4d4d4d;
+    font-weight: bold;
+}
+
+
+
+/* 中型のデバイス（タブレット向け、768px〜1024px） */
+@media (min-width: 600px) and (max-width: 1024px) {
+    body {
+        font-size: 1rem; /* 標準のフォントサイズ */
+    }
+    table {
+        font-size: 1rem; /* テーブルのフォントサイズ */
+    }
+    button, input {
+        padding: 10px; /* ボタンと入力フィールドのパディング */
+    }
+}
+
+/* リンク */
+a {
+    color: #ff69b4; /* 優しいピンク */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* 結果のエリア */
+#result {
+    color: #4d4d4d;
+}
+
+/* ボタンを横並びに */
+.button-container {
+    display: flex;
+    gap: 10px; /* ボタン間に少しスペース */
+}
+
+
+
+
+
+
+
+
+
+
